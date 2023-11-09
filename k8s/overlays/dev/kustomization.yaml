@@ -9,15 +9,12 @@ namespace: idpkathon-dev
 # namespace: team-geek-dream-idp_geekathon-dev
 
 resources:
-  - ../../base
-  - ingress.yaml
+- ../../base
+- ingress.yaml
 
-images:
   # ATENTION name = image.name NOT name = spec.containers[0].name
-  - name: ghcr.io/xgeeks-geekathon/team-geek-dream
-    newTag: v1
-  - name: ghcr.io/xgeeks-geekathon/team-geek-dream-datafeeder
-    newTag: v1
-# replicas:
-#   - name: team-geek-dream # the deployment name
-#     count: 1
+images:
+- name: ghcr.io/xgeeks-geekathon/team-geek-dream
+  newTag: v1
+- name: ghcr.io/xgeeks-geekathon/team-geek-dream-datafeeder
+  newTag: 7f3f248
